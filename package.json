@@ -1,0 +1,27 @@
+{
+  "name": "studion",
+  "version": "0.0.1",
+  "description": "Homepage for Studion provider and services",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hugomonteirosouza/Studion-project.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javascript"
+  ],
+  "author": "Hugo Monteiro",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hugomonteirosouza/Studion-project/issues"
+  },
+  "homepage": "https://github.com/hugomonteirosouza/Studion-project#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
