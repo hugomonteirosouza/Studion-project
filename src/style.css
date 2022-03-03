@@ -1,32 +1,41 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
 
 * {
+    --color-primary: #ffc500;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
 
+ul{
+    display: flex;
+    list-style: none;
+}
+
+/* estilizando a nav do site */
+
 .navbar {
     position: fixed;
     display: grid;
     grid-template-columns: 1fr 9fr;
-    padding: 0 3rem;
+    padding: 1.5rem 3rem;
+    padding-left: 1rem;
     align-items: center;
     background-color: #000;
     color: #fff;
-    height: 10vh;
     
 }
 
 .navbar__links {
-    display: flex;
     justify-self: end;
-    list-style: none;
 }
 
 .navbar__links li{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: .875rem;
     align-items: center;
     margin-right: 1rem;
     ;
@@ -35,4 +44,26 @@
 .navbar__links a{
     text-decoration: none;
     color: #fff;
+}
+
+.navbar__links a:hover{
+    color: var(--color-primary);
+}
+
+.logo{
+    font-weight: 900;
+    font-size: 2.375rem;
+    text-transform: uppercase;
+}
+
+.logo__color{
+    color: var(--color-primary);
+}
+
+.logo__subtitle{
+    font-weight: 300;
+    font-size: .875rem;
+    word-wrap: inherit;
+    float: right;
+    line-height: 10px;
 }
