@@ -2,11 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&display=swap');
 
 * {
+    cursor: default;
+   /*resetar os estilos prévios do html*/
     --color-primary: #ffc500;
     margin: 0;
-    padding: 0;
+    padding:0;
     box-sizing: border-box;
+    /* add uma nova fonte para o site inteiro*/
     font-family: 'Montserrat', sans-serif;
+    --main-padding: 1rem;
+}
+
+body{
+    padding-top: 7.75rem;
 }
 
 ul{
@@ -18,14 +26,17 @@ ul{
 
 .navbar {
     position: fixed;
+    z-index: 1; /*faz com que o navbar se sobreponha sobre o .slide que tem posiçao relativa*/
+    top: 0%;
+    /*fixar a navbar no topo da pagina independente do body */
     display: grid;
     grid-template-columns: 1fr 9fr;
     padding: 1.5rem 3rem;
     padding-left: 1rem;
-    align-items: center;
+    align-items: center;/* alinhar o h1 e a ul de maneira horizontal para que fiquem na mesma linha no navbar */
     background-color: #000;
     color: #fff;
-    
+    height: 7.75rem;
 }
 
 .navbar__links {
@@ -37,7 +48,7 @@ ul{
     text-transform: uppercase;
     font-size: .875rem;
     align-items: center;
-    margin-right: 1rem;
+    margin-right: 3rem;
     ;
 }
 
@@ -63,7 +74,65 @@ ul{
 .logo__subtitle{
     font-weight: 300;
     font-size: .875rem;
-    word-wrap: inherit;
     float: right;
     line-height: 10px;
+}
+
+/* estilizando a div slider*/
+
+#slider{
+    color: #fff; 
+}
+
+.slide{
+    position: relative; /* sendo o class pai, prende o .slide__copy dentro de .slide que agora tem posição absoluta*/
+    height: calc(100vh - 7.75rem);
+}
+
+.slide__background-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide__copy{
+    position: absolute; 
+    left: 50vw;
+    top: 6.25rem;
+}
+
+.slide__copy h6{
+    font-size: .9375rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1875rem;
+}
+
+.slide__copy h2{
+    font-size: 6.25rem;
+    text-transform: uppercase;
+    line-height: 6.25rem;
+}
+
+.slide__copy h2 span{
+    display: block; /* quebrar linha*/
+}
+
+.btn{
+    cursor: pointer;
+    height: 2.8125rem;
+    padding: 0 2rem;
+    border: solid #fff;
+    background: unset;
+    color: var(--color-primary);
+    border-radius: 10rem;
+    font-weight: 700;
+    transition: 0.5s all ease;
+}
+
+.btn:hover{
+    border: var(--color-primary);
+    background: var(--color-primary);
+    color: #fff;
 }
