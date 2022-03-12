@@ -6,12 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STUDION</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <nav>
-        <h1>studi<span>on</span><span>eventos</span></h1>
-        <ul>
+    <nav class="navbar">
+        <h1 class="logo">studi<span class= "logo__color">on</span><span class="logo__subtitle">eventos</span></h1>
+        <ul class="navbar__links">
             <li>
                 <a href="#empresa">
                     Empresa
@@ -43,9 +44,15 @@
     <header>
         <div id="slider">
             <div class="slide">
-                <h6><span>próximo evento </span>- dia 25 de setembro às 19h</h6>
-                <h2><span>Creative</span> Minds</h2>
-                <button>Saiba mais</button>
+                <img 
+                class="slide__background-image"
+                src="./images/banner.jpg" 
+                alt="Studion banner">
+                <div class="slide__copy">
+                    <h6><span class="logo__color">próximo evento </span>- dia 25 de setembro às 19h</h6>
+                    <h2><span class="logo__color">Creative</span> Minds</h2>
+                    <button class="btn btn--slide">Saiba mais</button>
+                </div>    
             </div>
         </div>
     </header>
