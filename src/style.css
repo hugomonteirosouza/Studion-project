@@ -24,6 +24,11 @@ footer {
     overflow-x: hidden;
 }
 
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 ul {
     display: flex;
     list-style: none;
@@ -34,16 +39,19 @@ ul {
 .navbar {
     position: fixed;
     z-index: 1; /*faz com que o navbar se sobreponha sobre o .slide que tem posiçao relativa*/
-    top: 0%;
-    /*fixar a navbar no topo da pagina independente do body */
+    top: 0%; /*fixar a navbar no topo da pagina independente do body */
+    background-color: #000;
+    color: #fff;
+    height: 7.75rem;
+    width: 100%;
+}
+
+.container__navbar{
     display: grid;
     grid-template-columns: 1fr 9fr;
     padding: 1.5rem 3rem;
     padding-left: 1rem;
-    align-items: center;/* alinhar o h1 e a ul de maneira horizontal para que fiquem na mesma linha no navbar */
-    background-color: #000;
-    color: #fff;
-    height: 7.75rem;
+    align-items: center; /* alinhar o h1 e a ul de maneira horizontal para que fiquem na mesma linha no navbar */
 }
 
 .navbar__links {
@@ -89,6 +97,7 @@ ul {
 
 #slider{
     color: #fff; 
+    background-color: #000;
 }
 
 .slide{
@@ -105,7 +114,7 @@ ul {
 
 .slide__copy{
     position: absolute; 
-    left: 50vw;
+    left: 50%;
     top: 6.25rem;
 }
 
