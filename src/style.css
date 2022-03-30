@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 
 * {
     cursor: default;
@@ -80,6 +81,7 @@ ul {
     font-weight: 900;
     font-size: 2.375rem;
     text-transform: uppercase;
+    color: #fff;
 }
 
 .logo__color{
@@ -89,8 +91,9 @@ ul {
 .logo__subtitle{
     font-weight: 300;
     font-size: .875rem;
-    float: right;
     line-height: 10px;
+    text-align: end;
+    display: block;
 }
 
 /* estilizando a div slider*/
@@ -265,4 +268,101 @@ ul {
 .quote__btn{
     color: #000;
     border-color: #000;
+}
+
+.quote__btn:hover {
+    box-shadow: 0 1rem 1rem #0006;
+}
+
+.footer {
+    background-color: #000;
+    color: #fff;
+   
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    align-items: center;
+    padding: 4rem 0;
+}
+
+.footer__container h3 {
+    justify-self: start;
+}
+
+.footer__form {
+    justify-self: center;
+
+    display: grid;
+    align-items: center;
+    grid-template-columns: 6.875rem 16.5625rem 6.25rem;
+}
+
+.footer__form label {
+    font-weight: 300;
+    font-size: .875rem;
+    text-align: center;
+    margin-right: 1.125rem ;
+}
+
+.footer__form label span {
+    display: block;
+}
+
+.footer__email {
+    display: grid;
+    grid-template-columns: auto 3.3125rem;
+}
+
+.footer__email input {
+    font-weight: 700;
+    text-transform: uppercase;
+    height: 3rem ;
+    background-color: var(--color-primary);
+    border: unset;
+    padding: 0 1rem ;
+}
+
+.footer__email input::placeholder {
+    color: #000;
+}
+
+.footer__email button {
+    border: unset;
+    width: 3.375rem;
+    transition: 0.3s all ease;
+}
+
+.footer__email button:hover {
+    color: #fff;
+    background-color: var(--color--copy);
+    box-shadow: 0 0 1rem #fff6;
+}
+
+.footer__social {
+    justify-self: end;
+}
+
+.footer__social a {
+    color:#fff;
+}
+
+.footer__social a .fa-twitter {
+    color: #000;
+}
+
+.line {
+    border-color: #fff4;
+}
+
+.final {
+    font-weight: 300;
+    text-align: center;
+    margin: 2.5rem 0;
+}
+
+.final span {
+    text-transform: uppercase;
+    color: var(--color-primary);
 }
