@@ -1,0 +1,109 @@
+
+.contact__info__container,
+.contact__form__container {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact__info__container {
+    margin-right: 0;
+    padding-top: 4.375rem;
+    padding-bottom: 15rem;
+}
+
+.contact__info {
+    color: var(--color--copy);
+}
+
+.contact__info h2 {
+    font-size: 1.5625rem;
+    margin-bottom: 1.5625rem;
+}
+
+.contact__info h3 {
+    font-size: 1.5625rem;
+    margin-top: 3.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact__info i {
+    color: var(--color-primary);
+    margin-right: .8125rem;
+}
+
+.contact__info span {
+    font-weight: 700;
+    font-size: 1.0625rem;
+    line-height: 1.6875rem;
+}
+
+.contact__info small {
+    display: block;
+    font-size: 1.0625rem;
+    margin-left: 2.75rem;
+}
+
+
+.contact__form__container{
+    margin-left: 7.150rem;
+    margin-top: 4.375rem;
+    margin-bottom: 4.375rem;
+}
+
+.contact__form {
+    background-color: #000;
+    color: #ffff;
+}
+
+.contact__form h3 {
+    font-size: 1.5625rem;
+    margin-bottom: 3.4375rem;
+}
+
+.contact__form label {
+    font-weight: 700;
+    margin: 2rem 0;
+}
+
+.contact__form input {
+    font-weight: 700;
+    font-size: 1rem;
+    width: 28.75rem;
+    padding: 0.5rem 0;
+    background: unset;
+    color: #ffff;
+    border: unset;
+    border-bottom: .1rem solid #fff6;
+}
+
+.contact__form input:focus {
+    outline: unset;
+}
+
+.contact__form button {
+    margin-top: 2rem;
+    margin-right: 6.5rem;
+}
+
+.contact__info span,
+.contact__form label,
+.contact__form input {
+    display: block;
+}
+
+.contact__form button {
+    float: right;
+}
+
+.maps  {
+    height: 36.5rem;
+}
+
+.maps iframe {
+    height: 36.5rem;
+}

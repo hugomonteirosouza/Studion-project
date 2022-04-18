@@ -1,0 +1,44 @@
+* {
+    cursor: default;
+    /*resetar os estilos prévios do html*/
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header, 
+main, 
+footer {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+.container{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 2.375rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.logo__color {
+    color: var(--color-primary);
+}
+
+.logo__subtitle {
+    font-weight: 300;
+    font-size: .875rem;
+    line-height: 10px;
+    text-align: end;
+    display: block;
+}
