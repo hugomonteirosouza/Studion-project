@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>STUDION</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -44,8 +46,8 @@
         </div>    
     </nav>
     <header>
-        <div id="slider">
-            <div class="container slide">
+        <div class="slider">
+            <div class="slide">
                 <img 
                 class="slide__background-image"
                 src="./images/banner.jpg" 
@@ -56,7 +58,24 @@
                     <button class="btn btn--slide">Saiba mais</button>
                 </div>    
             </div>
+            <div class="slide">
+                <img class="slide__background-image" src="./images/banner2.jpg" alt="Studion banner">
+                <div class="slide__copy">
+                    <h6><span class="logo__color">próximo evento </span>- dia 25 de setembro às 19h</h6>
+                    <h2><span class="logo__color">fast</span> forward</h2>
+                    <button class="btn btn--slide">Saiba mais</button>
+                </div>
+            </div>
+            <div class="slide">
+                <img class="slide__background-image" src="./images/banner3.jpg" alt="Studion banner">
+                <div class="slide__copy">
+                    <h6><span class="logo__color">próximo evento </span>- dia 25 de setembro às 19h</h6>
+                    <h2><span class="logo__color">fest</span> show</h2>
+                    <button class="btn btn--slide">Saiba mais</button>
+                </div>
+            </div>
         </div>
+        
     </header>
     <main>
         <section id="counter">
@@ -142,6 +161,10 @@
                 <small>Studi<span>on </span>- Todos os direito reservados.</small>
             </p>
     </footer>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 </html>
