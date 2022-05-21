@@ -1,3 +1,6 @@
+
+@import "./_varibles.css";
+
 .navbar {
     position: absolute;
     z-index: 1; /*faz com que o navbar se sobreponha sobre o .slide que tem posiçao relativa*/
@@ -20,29 +23,101 @@
     text-decoration: none;
 }
 
+/* Mobile */
 .navbar__links {
-    justify-self: end;
+    display: none;
 }
 
+/* Desktop */
+@media screen and (min-width:1280px) {
+    .navbar__links {
+        display: flex;
+        justify-self: end;
+    }
+}
+
+.navbar__links.active {
+    display: grid;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100vw;
+    height: 101vh;
+    background: #000e;
+    place-items: center;
+    
+
+}
+
+/* Mobile */
 .navbar__links li{
     font-weight: 300;
     text-transform: uppercase;
-    font-size: .875rem;
+    font-size: 1.5rem;
     align-items: center;
-    margin-right: 3rem;
-    ;
 }
 
+/* Desktop */
+@media screen and (min-width:1280px) {
+    .navbar__links li {
+        font-weight: 300;
+        text-transform: uppercase;
+        font-size: .875rem;
+        align-items: center;
+        margin-right: 3rem;
+    }
+}
+
+/* Mobile */
 .navbar__links a{
     text-decoration: none;
-    color: #fff;
+    color: #fff9;
 }
 
-.navbar__links a.active {
+/* Desktop */
+@media screen and (min-width:1280px) {
+    .navbar__links a {
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+/* Mobile */
+.navbar__links.active a.active {
     color: var(--color-primary);
+}
+
+/* Desktop */
+@media screen and (min-width:1280px) {
+    .navbar__links a.active {
+        color: var(--color-primary);
+    }
 }
 
 .navbar__links a:hover{
     color: var(--color-primary);
+}
+
+/* Mobile */
+.navbar__menu-btn {
+    cursor: pointer;
+
+    z-index: 10;
+    
+    color: #fff;
+    font-size: 2rem;
+    background: unset;
+    border: unset;
+    
+    justify-self: end;
+    padding-right: 2rem;
+}
+
+/* Desktop */
+@media screen and (min-width:1280px) {
+    .navbar__menu-btn {
+        display:none;
+    }
 }
 
