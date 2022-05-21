@@ -4,8 +4,28 @@
     margin: 0;
     padding:0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
 }
+
+ /*Mobile */
+:root {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 4.25vw;
+}
+
+/* Tablet */
+@media screen and ( min-width: 720px ) {
+    :root {
+        font-size: 2.22vw;
+    }
+}
+
+/* Desktop */
+@media screen and ( min-width: 1280px ) {
+    :root {
+        font-size: 16px;
+    }
+}
+
 
 header, 
 main, 
